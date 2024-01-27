@@ -1,8 +1,6 @@
 <div>
-    <h2>Робочі Скіли</h2>
-    <ul>
-      <li>{{ skillOne }}</li>
-      <li>{{ skillTwo }}</li>
-      <li>{{ skillFree }}</li>
-    </ul>
+  <h2>{{ 'Робочі Скіли' | uppercase }}</h2>
+  <ul>
+    <li *ngFor="let skill of skills" [ngClass]="getSkillClass(skill)">{{ skill | lowercase }}</li>
+  </ul>  
   </div>

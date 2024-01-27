@@ -1,6 +1,6 @@
 <div>
-    <h2>Досвід роботи</h2>
-    <ul>
-      <li>{{ jobs }}</li>
-    </ul>
-  </div>
+  <h2>{{ 'Досвід роботи' | uppercase }}</h2>
+  <ul>
+    <li *ngFor="let job of jobs">{{ job }}</li>
+  </ul>
+</div>

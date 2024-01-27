@@ -15,4 +15,6 @@ import { SkillsComponent } from './skills/skills.component';
 })
 export class AppComponent {
   title = 'resume-project';
+  currentDate: Date = new Date();
+
 }

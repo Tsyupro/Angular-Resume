@@ -1,8 +1,8 @@
 <div>
-    <h2>Посилання на ресурси</h2>
+    <h2>{{ 'Посилання на ресурси' | uppercase }}</h2>
     <ul>
-        <li><a [href]='twiiterLink'>Twiter</a></li>
-        <li><a [href]='instagramLink'>Instagram</a></li>
-        <li><a [href]='facebookLink'>Facebook</a></li>
+        <li><a [href]="twiiterLink" [ngStyle]="{ 'color': twiiterLink ? 'blue' : 'gray' }">Twitter</a></li>
+        <li><a [href]="instagramLink" [ngStyle]="{ 'color': instagramLink ? 'red' : 'gray' }">Instagram</a></li>
+        <li><a [href]="facebookLink" [ngStyle]="{ 'color': facebookLink ? 'green' : 'gray' }">Facebook</a></li>
     </ul>
 </div>
